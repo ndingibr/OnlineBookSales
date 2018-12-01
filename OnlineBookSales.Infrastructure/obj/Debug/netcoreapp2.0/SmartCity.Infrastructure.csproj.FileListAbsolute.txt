@@ -1,0 +1,12 @@
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.AssemblyInfo.cs
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\bin\Debug\netcoreapp2.0\SmartCity.Infrastructure.deps.json
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\bin\Debug\netcoreapp2.0\SmartCity.Infrastructure.dll
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\bin\Debug\netcoreapp2.0\SmartCity.Infrastructure.pdb
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\bin\Debug\netcoreapp2.0\SmartCity.Core.dll
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\bin\Debug\netcoreapp2.0\SmartCity.Core.pdb
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.csproj.CopyComplete
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.dll
+C:\Users\bndingin\source\repos\SmartCity\SmartCity.Infrastructure\obj\Debug\netcoreapp2.0\SmartCity.Infrastructure.pdb

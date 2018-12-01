@@ -1,0 +1,11 @@
+c:\users\bndingin\source\repos\SmartCity\SmartCity\bin\Debug\netcoreapp2.0\SmartCity.deps.json
+c:\users\bndingin\source\repos\SmartCity\SmartCity\bin\Debug\netcoreapp2.0\SmartCity.runtimeconfig.json
+c:\users\bndingin\source\repos\SmartCity\SmartCity\bin\Debug\netcoreapp2.0\SmartCity.runtimeconfig.dev.json
+c:\users\bndingin\source\repos\SmartCity\SmartCity\bin\Debug\netcoreapp2.0\SmartCity.dll
+c:\users\bndingin\source\repos\SmartCity\SmartCity\bin\Debug\netcoreapp2.0\SmartCity.pdb
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.csprojResolveAssemblyReference.cache
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.csproj.CoreCompileInputs.cache
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.AssemblyInfoInputs.cache
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.AssemblyInfo.cs
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.dll
+c:\users\bndingin\source\repos\SmartCity\SmartCity\obj\Debug\netcoreapp2.0\SmartCity.pdb

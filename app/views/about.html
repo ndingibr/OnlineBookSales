@@ -1,0 +1,114 @@
+<div class="container">
+  <h2>Feature Engineering </h2>
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+      <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-pills nav-stacked well">
+        <li class="active"><a href="#vtab1" data-toggle="tab">District</a></li>
+        <li><a href="#vtab2" data-toggle="tab">Day</a></li>
+        <li><a href="#vtab3" data-toggle="tab">Category</a></li>
+        <li><a href="#vtab3" data-toggle="tab">Year</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="vtab1">
+          <h3>Day on Crime Shift</h3>
+          <p>
+          </p>
+          <div id="vizContainer" style="width:800px; height:700px"></div>
+          <button onclick="initViz()">Click me</button>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="vtab2">
+          <h3>District on Crime Shift</h3>
+          <p>
+          </p>
+          <div id="vizContaineDay" style="width:800px; height:700px"></div>
+          <button onclick="initDayOnShiftViz()">Click me2</button>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade in" id="vtab4">
+          <h3>Year on Crime Shift</h3>
+          <p>
+          </p>
+          <div id="vizContaineCategory" style="width:800px; height:700px"></div>
+          <button onclick="initCategoryOnShiftViz()">Click me4</button>
+        </div>
+        <div role="tabpanel" class="tab-pane fade in" id="vtab3">
+          <h3>Year on Crime Shift</h3>
+          <p>
+          </p>
+          <div id="vizContaineYear" style="width:800px; height:700px"></div>
+          <button onclick="initYearOnShiftViz()">Click me3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('.nav-tabs-dropdown').each(function (i, elm) {
+    $(elm).text($(elm).next('ul').find('li.active a').text());
+  });
+
+  $('.nav-tabs-dropdown').on('click', function (e) {
+    e.preventDefault();
+    $(e.target).toggleClass('open').next('ul').slideToggle();
+  });
+
+  $('#nav-tabs-wrapper a[data-toggle="tab"]').on('click', function (e) {
+    e.preventDefault();
+    $(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());
+  });
+
+  function initViz() {
+    var containerDiv = document.getElementById("vizContainer"),
+      url = "https://public.tableau.com/views/Crime_Average_District_Per_Shift/District_On_Shift_Volume?:embed=y&:display_count=yes",
+      options = {
+        hideTabs: true,
+        onFirstInteractive: function () {
+          console.log("Run this code when the viz has finished loading.");
+        }
+      };
+
+    var viz = new tableau.Viz(containerDiv, url, options);
+    // Create a viz object and embed it in the container div.
+  }
+  function initDayOnShiftViz() {
+    var containerDiv = document.getElementById("vizContaineDay"),
+      url = "https://public.tableau.com/views/Crime_Average_District_Per_Shift/Day_On_Shift_Volume?:embed=y&:display_count=yes",
+      options = {
+        hideTabs: true,
+        onFirstInteractive: function () {
+          console.log("Run this code when the viz has finished loading.");
+        }
+      };
+
+    var viz = new tableau.Viz(containerDiv, url, options);
+    // Create a viz object and embed it in the container div.
+  }
+  function initCategoryOnShiftViz() {
+    var containerDiv = document.getElementById("vizContaineCategory"),
+      url = "https://public.tableau.com/views/Crime_Average_District_Per_Shift/Category_On_Shift_Volume?:embed=y&:display_count=yes",
+      options = {
+        hideTabs: true,
+        onFirstInteractive: function () {
+          console.log("Run this code when the viz has finished loading.");
+        }
+      };
+    var viz = new tableau.Viz(containerDiv, url, options);
+    // Create a viz object and embed it in the container div.
+  }
+  function initYearOnShiftViz() {
+    var containerDiv = document.getElementById("vizContaineYear"),
+      url = "https://public.tableau.com/views/Crime_Average_District_Per_Shift/Year_On_Shift_Volume?:embed=y&:display_count=yes",
+      options = {
+        hideTabs: true,
+        onFirstInteractive: function () {
+          console.log("Run this code when the viz has finished loading.");
+        }
+      };
+    var viz = new tableau.Viz(containerDiv, url, options);
+    // Create a viz object and embed it in the container div.
+  }
+
+</script>
