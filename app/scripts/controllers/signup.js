@@ -2,8 +2,8 @@
 
 angular
   .module('onlineClientApp')
-  .controller('SignupCtrl', ['$scope', '$location', '$routeParams', '$timeout', 'authService', 'roleService',
-    function ($scope, $location, $routeParams, $timeout, authService, roleService) {
+  .controller('SignupCtrl', ['$scope', '$location', '$routeParams', '$timeout', 'authService', 
+    function ($scope, $location, $routeParams, $timeout, authService) {
 
       $scope.savedSuccessfully = false;
         $scope.message = "";
@@ -16,36 +16,8 @@ angular
         lastName: "",
         password: "",
         confirmPassword: "",
-        phoneNumber: "",
-        selectedRole: "",
-        police_Station: "",
-        active: false,
-        adminState: false
+
       };
-
-
-      authService.getRoles()
-         .then(function (results) {
-            $scope.roles = results.data;
-         });
-
-        authService.getPoliceStations()
-            .then(function (results) {
-                $scope.policeStations = results.data;
-            });
-
-        if ($routeParams.email !== undefined) {
-            authService.getUsersDetails($routeParams.email)
-                .then(function (results) {
-                    $scope.signup.email = results.data[0].email;
-                    $scope.signup.firstName = results.data[0].firstName;
-                    $scope.signup.lastName = results.data[0].lastName;
-                    $scope.signup.phoneNumber = results.data[0].phoneNumber;
-                    $scope.signup.selectedRole = results.data[0].id.toString();
-                    $scope.signup.police_Station = results.data[0].police_Station;
-                    $scope.signup.adminState = $routeParams.isAdmin
-                });
-        } 
 
       $scope.register = function () {
           authService.saveRegistration($scope.signup).then(function success(response) {

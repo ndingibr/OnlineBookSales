@@ -22,15 +22,3 @@ C:\Practice\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2
 C:\Practice\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.csproj.CopyComplete
 C:\Practice\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.dll
 C:\Practice\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.pdb
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\bin\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.deps.json
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\bin\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.dll
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\bin\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.pdb
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.dll
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.pdb
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.csprojAssemblyReference.cache
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.AssemblyInfo.cs
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.csproj.CopyComplete
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.dll
-C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Infrastructure\obj\Debug\netcoreapp2.0\OnlineBookSales.Infrastructure.pdb

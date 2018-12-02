@@ -9,13 +9,6 @@ angular
         ])
     .config(function ($routeProvider) {
         $routeProvider
-            .when('/',
-                {
-                    templateUrl: 'views/main.html',
-                    controller: 'MainCtrl',
-                    controllerAs: 'main'
-
-                })
             .when('/about',
                 {
                     templateUrl: 'views/about.html',
@@ -28,7 +21,7 @@ angular
                     controller: 'SignupCtrl',
                     controllerAs: 'signup'
                 })
-           .when('/detail/:latitude',
+            .when('/detail/:latitude',
                 {
                     templateUrl: 'views/detail.html',
                     controller: 'DetailCtrl',
@@ -40,7 +33,13 @@ angular
                     controller: 'SignupCtrl',
                     controllerAs: 'signup'
                 })
-             .when('/login',
+            .when('/login',
+                {
+                    templateUrl: 'views/login.html',
+                    controller: 'LoginCtrl',
+                    controllerAs: 'login'
+                })
+            .when('/',
                 {
                     templateUrl: 'views/login.html',
                     controller: 'LoginCtrl',

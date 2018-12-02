@@ -2,40 +2,59 @@
 
 angular
     .module('onlineClientApp')
-    .controller('BooksCtrl', ['$scope', 'booksService', 'authService',
-        function ($scope, booksService, authService) {
+    .controller('BooksCtrl', ['$scope', '$location','booksService', 'authService', 
+        function ($scope, $location, booksService, authService) { 
 
-            $scope.books = [];
+            $scope.subscribedBooks = [];
+            $scope.unsubscribedBooks = [];
 
 
             $scope.subscription = {
-                Id: "",
                 userId: "",
                 bookId: ""
             };
 
-            booksService.getBooks()
+            $scope.email = authService.authentication.email;
+
+            booksService.getBooksSubscribed($scope.email)
                 .then(function (results) {
-                    $scope.books = results.data;
+                    $scope.subscribedBooks = results.data;
+                });
+
+            booksService.getBooksNotSubscribed($scope.email)
+                .then(function (results) {
+                    $scope.unsubscribedBooks = results.data[0];
                 });
 
             $scope.subscribe = function (bookId) {
 
-                var email = authService.authentication.email;
-                    authService.getUsersDetails(email)
+                authService.getUsersDetails($scope.email )
                     .then(function (results) {
-                        $scope.subscription.userId = results.id;
+                        $scope.subscription.userId = results.data.id;
                     });
 
                 $scope.subscription.bookId = bookId;
 
                 booksService.subscribe($scope.subscription)
                     .then(function (saveReault) {
-                        $location.path('/books');
+                        startTimer();
                     })
-             }
+            }
 
+            $scope.unsubscribe = function (bookId) {
 
+                authService.getUsersDetails($scope.email)
+                    .then(function (results) {
+                        $scope.subscription.userId = results.data.id;
+                    });
+
+                $scope.subscription.bookId = bookId;
+
+                booksService.unsubscribe($scope.subscription)
+                    .then(function (saveReault) {
+                        startTimer();
+                    })
+            }
 
             $scope.filter_by = function (field) {
                 console.log(field);
@@ -50,6 +69,13 @@ angular
                     v['__' + field] = v[field] < $scope.g[field];
                 })
 
+            }
+
+            var startTimer = function () {
+                var timer = $timeout(function () {
+                    $timeout.cancel(timer);
+                    $location.path('/books');
+                }, 2000);
             }
 
         }]);

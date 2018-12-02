@@ -12,6 +12,9 @@ angular
             var service = {
                 getBooks: getBooks,
                 subscribe: subscribe,
+                getBooksSubscribed: getBooksSubscribed,
+                getBooksNotSubscribed: getBooksNotSubscribed,
+                unsubscribe: unsubscribe
             };
 
             return service;
@@ -22,9 +25,29 @@ angular
                         return results;
                     });
             };
+            
+            function getBooksSubscribed(email) {
+                return $http.get(serviceBase + 'api/books/bookssubscriptionbyemail?email=' + email)
+                    .then(function (results) {
+                        return results;
+                    });
+            };
 
-            function subscribe(subscriptions) {
-                return $http.post(serviceBase + 'api/books/subscribe', subscriptions).then(function (response) {
+            function getBooksNotSubscribed(email) {
+                return $http.get(serviceBase + 'api/books/booksnotsubscriptionbyemail?email=' + email)
+                    .then(function (results) {
+                        return results;
+                    });
+            };
+
+            function subscribe(subscription) {
+                return $http.post(serviceBase + 'api/books/subscribe', subscription).then(function (response) {
+                    return response;
+                });
+            };
+
+            function unsubscribe(subscription) {
+                return $http.post(serviceBase + 'api/books/unsubscribe', subscription).then(function (response) {
                     return response;
                 });
             };
