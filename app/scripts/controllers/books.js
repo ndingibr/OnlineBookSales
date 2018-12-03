@@ -2,8 +2,8 @@
 
 angular
     .module('onlineClientApp')
-    .controller('BooksCtrl', ['$scope', '$location','booksService', 'authService', 
-        function ($scope, $location, booksService, authService) { 
+    .controller('BooksCtrl', ['$scope', '$route', 'booksService', 'authService',
+        function ($scope, $route, booksService, authService) {
 
             $scope.subscribedBooks = [];
             $scope.unsubscribedBooks = [];
@@ -16,6 +16,11 @@ angular
 
             $scope.email = authService.authentication.email;
 
+            authService.getUsersDetails($scope.email)
+                .then(function (results) {
+                    $scope.subscription.userId = results.data.id;
+                });
+
             booksService.getBooksSubscribed($scope.email)
                 .then(function (results) {
                     $scope.subscribedBooks = results.data;
@@ -27,32 +32,18 @@ angular
                 });
 
             $scope.subscribe = function (bookId) {
-
-                authService.getUsersDetails($scope.email )
-                    .then(function (results) {
-                        $scope.subscription.userId = results.data.id;
-                    });
-
                 $scope.subscription.bookId = bookId;
-
                 booksService.subscribe($scope.subscription)
                     .then(function (saveReault) {
-                        startTimer();
+                        $route.reload();
                     })
             }
 
             $scope.unsubscribe = function (bookId) {
-
-                authService.getUsersDetails($scope.email)
-                    .then(function (results) {
-                        $scope.subscription.userId = results.data.id;
-                    });
-
                 $scope.subscription.bookId = bookId;
-
                 booksService.unsubscribe($scope.subscription)
                     .then(function (saveReault) {
-                        startTimer();
+                        $route.reload();
                     })
             }
 
@@ -68,7 +59,6 @@ angular
                     console.log(v['__' + field]);
                     v['__' + field] = v[field] < $scope.g[field];
                 })
-
             }
 
             var startTimer = function () {

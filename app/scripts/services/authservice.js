@@ -8,6 +8,7 @@ angular
             var serviceBase = ngAuthSettings.apiServiceBaseUri;
 
             var authentication = {
+                id: 0,
                 isAuth: false,
                 email: "",
                 useRefreshTokens: false
