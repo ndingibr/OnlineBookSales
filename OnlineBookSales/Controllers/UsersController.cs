@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using OnlineBookSales.Core.Entities;
-using OnlineBookSales.Infrastructure;
+using OnlineBookSales.Core.Interfaces;
 
 namespace OnlineBookSales.API
 {

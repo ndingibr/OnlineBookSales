@@ -12,11 +12,12 @@
 
   <ItemGroup>
     <Compile Remove="Entities\Train.cs" />
+    <Compile Remove="Services\IPythonService.cs" />
+    <Compile Remove="Services\PythonService.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Services\" />
     <Folder Include="Shared\" />
   </ItemGroup>
 

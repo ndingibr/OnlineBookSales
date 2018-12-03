@@ -28,7 +28,7 @@ angular
 
             booksService.getBooksNotSubscribed($scope.email)
                 .then(function (results) {
-                    $scope.unsubscribedBooks = results.data[0];
+                    $scope.unsubscribedBooks = results.data;
                 });
 
             $scope.subscribe = function (bookId) {

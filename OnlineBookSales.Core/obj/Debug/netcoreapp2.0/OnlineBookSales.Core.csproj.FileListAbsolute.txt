@@ -16,6 +16,14 @@ C:\Practice\OnlineBookSales\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineB
 C:\Practice\OnlineBookSales\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.dll
 C:\Practice\OnlineBookSales\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.pdb
 C:\Practice\OnlineBookSales\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.csprojAssemblyReference.cache
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.dll
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.pdb
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.deps.json
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.dll
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.pdb
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.csproj.CoreCompileInputs.cache
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.AssemblyInfoInputs.cache
+C:\Dev\OnlineBookSales-master\OnlineBookSales.Core\obj\Debug\netcoreapp2.0\OnlineBookSales.Core.AssemblyInfo.cs
 C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.deps.json
 C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.dll
 C:\Users\bndingin\source\repos\OnlineBookSales\OnlineBookSales.Core\bin\Debug\netcoreapp2.0\OnlineBookSales.Core.pdb

@@ -11,7 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using OnlineBookSales.Core;
+using OnlineBookSales.Core.Entities;
+using OnlineBookSales.Core.Interfaces;
+using OnlineBookSales.Core.Services;
 using OnlineBookSales.Infrastructure;
+using OnlineBookSales.Infrastructure.Repository;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace OnlineBookSales.API
@@ -64,6 +68,12 @@ namespace OnlineBookSales.API
 
             services.AddDbContext<OnlineBookSalesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("OnlineBookSalesConnection"), b => b.MigrationsAssembly("OnlineBookSales.API")));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IBookService), typeof(BookService));
+            services.AddScoped(typeof(IBookRepository), typeof(BookRepository));
+            services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
+            services.AddScoped<ISubscriptionsService, SubscriptionService>();
+
+            
 
         }
 
